@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: telegram-bot
+    env: static
+    branch: main
+    buildCommand: ""
+    staticPublishPath: .
+    startCommand: php -S 0.0.0.0:$PORT edit.php
